@@ -1,8 +1,6 @@
 <template>
   <div>
-    <main>
-      <router-view> </router-view>
-    </main>
+    <h1>Minha página splash</h1>
   </div>
 </template>
 <script>
