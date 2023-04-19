@@ -59,10 +59,6 @@ export default {};
 .inputContainer::placeholder {
   font-size: 14px;
   font-weight: 500;
-  width: 100.3px;
-  height: 17px;
-  top: 17px;
-  left: 16.24px;
   color: #292730;
 }
 .iconSearch {
