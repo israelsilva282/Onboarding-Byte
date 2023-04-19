@@ -1,10 +1,22 @@
 <template>
-  <div>
-    <h1>Minha página splash</h1>
+  <div class="container">
+    <MyLogo />
   </div>
 </template>
 <script>
-export default {};
+import MyLogo from "../components/MyLogo";
+export default {
+  components: {
+    MyLogo,
+  },
+};
 </script>
 <style>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #13111b;
+}
 </style>
