@@ -1,10 +1,15 @@
 <template>
   <div class="container">
-    <h1>Meu forum</h1>
+    <Header />
   </div>
 </template>
 <script>
-export default {};
+import Header from "../components/MyHeader.vue";
+export default {
+  components: {
+    Header,
+  },
+};
 </script>
 <style scoped>
 .container {
