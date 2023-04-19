@@ -16,4 +16,13 @@ h1 {
   font-weight: 700;
   color: #ff79c6;
 }
+.questionSection {
+  display: flex;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
 </style>
