@@ -1,21 +1,18 @@
 <template>
   <div class="container">
-    <MyLogo />
+    <Header />
   </div>
 </template>
 <script>
-import MyLogo from "../components/MyLogo";
+import Header from "../components/MyHeader.vue";
 export default {
   components: {
-    MyLogo,
+    Header,
   },
 };
 </script>
 <style scoped>
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   background-color: #13111b;
 }

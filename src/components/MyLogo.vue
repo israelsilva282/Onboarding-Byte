@@ -8,7 +8,7 @@
 <script>
 export default {};
 </script>
-<style>
+<style scoped>
 .mainLogo {
   height: 263px;
   width: 197px;
