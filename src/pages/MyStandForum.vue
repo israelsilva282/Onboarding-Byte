@@ -1,13 +1,16 @@
 <template>
   <div class="container">
     <Header />
+    <Input />
   </div>
 </template>
 <script>
 import Header from "../components/MyHeader.vue";
+import Input from "../components/MyInput.vue";
 export default {
   components: {
     Header,
+    Input,
   },
 };
 </script>
