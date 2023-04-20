@@ -17,7 +17,7 @@ h1 {
   color: #ff79c6;
 }
 .questionSection {
-  height: 60vh;
+  height: 74.4vh;
   display: flex;
   justify-content: center;
   align-items: center;

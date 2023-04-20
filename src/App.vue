@@ -17,8 +17,10 @@ export default {};
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   min-height: 100vh;
+  background-color: #13111b;
 }
 
 button {
