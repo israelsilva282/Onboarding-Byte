@@ -24,7 +24,8 @@ export default {};
 }
 .mainInput {
   height: 77px;
-  width: 1256px;
+  width: 95%;
+  max-width: 95%;
   border-radius: 4px;
   background: #191622;
   border: none;

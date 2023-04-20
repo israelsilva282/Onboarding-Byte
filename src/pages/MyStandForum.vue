@@ -2,7 +2,7 @@
   <div class="container">
     <Header />
     <section class="mainSection">
-      <div>
+      <div class="questionContainer">
         <Input />
         <Question />
       </div>
@@ -30,5 +30,8 @@ export default {
 .mainSection {
   display: flex;
   justify-content: space-between;
+}
+.questionContainer {
+  width: 100%;
 }
 </style>

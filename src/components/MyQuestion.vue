@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Duvidas e Perguntas</h1>
     <section class="questionSection">
       <h2>Nenhuma pergunta disponível ...T_T</h2>
