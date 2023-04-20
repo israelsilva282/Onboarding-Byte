@@ -29,5 +29,6 @@ export default {
 <style scoped>
 .mainSection {
   display: flex;
+  justify-content: space-between;
 }
 </style>
