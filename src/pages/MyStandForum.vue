@@ -20,17 +20,7 @@ import Sidebar from "../components/MySidebar.vue";
 export default {
   data() {
     return {
-      questions: [
-        {
-          nome: "Gustavo",
-          question:
-            "Não consigo mudar a versão do meu Node no linux, como faço?",
-        },
-        {
-          nome: "Israel",
-          question: "Como centralizar uma div?",
-        },
-      ],
+      questions: [],
     };
   },
   components: {
