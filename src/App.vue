@@ -20,6 +20,8 @@ export default {};
 
 body {
   min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  background-color: #13111b;
 }
 
 button {
