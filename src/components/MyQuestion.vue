@@ -23,23 +23,8 @@
 </template>
 <script>
 export default {
-  data() {
-    return {
-      questions: [
-        {
-          question:
-            "Não consigo mudar a versão do meu Node no linux, como faço?",
-        },
-        {
-          question:
-            "Não consigo mudar a versão do meu Node no linux, como faço?",
-        },
-        {
-          question:
-            "Não consigo mudar a versão do meu Node no linux, como faço?",
-        },
-      ],
-    };
+  props: {
+    questions: [],
   },
 };
 </script>
