@@ -5,15 +5,30 @@
         type="text"
         class="mainInput"
         placeholder="escreva aqui sua duvida ou problema..."
+        v-model="questions.question"
       />
-      <button class="iconSearch">
+      <button class="iconSearch" @click="createQuestion()">
         <img src="../assets/icon-send.png" alt="Ícone de pesquisa" />
       </button>
     </div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      questions: { nome: "Gustavo", question: "" },
+    };
+  },
+  methods: {
+    createQuestion() {
+      this.$store.dispatch(
+        "createQuestion",
+        JSON.parse(JSON.stringify(this.questions))
+      );
+    },
+  },
+};
 </script>
 <style scoped>
 .container {
