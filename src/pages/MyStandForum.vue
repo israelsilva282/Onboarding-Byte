@@ -13,6 +13,8 @@
   </div>
 </template>
 <script>
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
+import { db } from "../services/firebaseConnection";
 import Header from "../components/MyHeader.vue";
 import Input from "../components/MyInput.vue";
 import Question from "../components/MyQuestion.vue";
@@ -22,6 +24,25 @@ export default {
     return {
       questions: [],
     };
+  },
+  methods: {
+    async getAllQuestions() {
+      const colRef = collection(db, "questions");
+      const queryRef = query(colRef, orderBy("created", "asc"));
+      await getDocs(queryRef).then((snapshot) => {
+        snapshot.forEach((doc) => {
+          this.questions.push({
+            id: doc.id,
+            name: doc.data().name,
+            question: doc.data().question,
+          });
+        });
+      });
+    },
+  },
+
+  mounted() {
+    this.getAllQuestions();
   },
   components: {
     Header,
