@@ -17,7 +17,7 @@
 export default {
   data() {
     return {
-      questions: { nome: "Gustavo", question: "" },
+      questions: { name: "Gustavo", question: "" },
     };
   },
   methods: {

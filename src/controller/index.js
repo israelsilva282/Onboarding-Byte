@@ -5,12 +5,11 @@ import { db } from "../services/firebaseConnection"
 export default createStore({
     actions: {
         async createQuestion(object, question) {
-            console.log(question)
             // 'questions' collection reference
             const colRef = collection(db, 'questions')
             // data to send
             const dataObj = {
-                name: question.nome,
+                name: question.name,
                 question: question.question,
                 created: new Date(),
             };
@@ -18,7 +17,7 @@ export default createStore({
             const docRef = await addDoc(colRef, dataObj)
 
             // access auto-generated ID with '.id'
-            console.log('Document was created with ID:', docRef.id)
+            alert('Document was created', docRef.id)
         }
     }
 })
