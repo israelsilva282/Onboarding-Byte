@@ -45,6 +45,10 @@ export default {
   background: #191622;
   border: none;
   padding: 30px 0 30px 25px;
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .mainInput::placeholder {

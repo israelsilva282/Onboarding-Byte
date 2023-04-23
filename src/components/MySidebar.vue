@@ -50,7 +50,7 @@ h1 {
   margin-bottom: 16px;
 }
 .questionSection {
-  height: 87vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
