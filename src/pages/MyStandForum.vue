@@ -27,8 +27,11 @@ export default {
   },
   methods: {
     async getAllQuestions() {
+      // 'questions' collection reference
       const colRef = collection(db, "questions");
+      // getting de collection data reference
       const queryRef = query(colRef, orderBy("created", "asc"));
+      // adding the data do the array 'questions'
       await getDocs(queryRef).then((snapshot) => {
         snapshot.forEach((doc) => {
           this.questions.push({
