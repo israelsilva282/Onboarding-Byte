@@ -13,7 +13,7 @@
       >
         <h2>{{ question.question }}</h2>
         <div class="iconsContainer">
-          <span>{{ question.nome }}</span>
+          <span>{{ question.name }}</span>
           <div>
             <button>
               <img src="../assets/icon-heart.png" alt="" />
